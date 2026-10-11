@@ -1,0 +1,31 @@
+# Python caches and local IDE settings
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+
+# Dataset files remain available locally but are too large for the Git repository
+SHWD_YOLO/images/
+SHWD_YOLO/labels/
+
+# Generated detection artefacts (including large test videos)
+legacy/yolov5-master/runs/detect/
+
+# Runtime and experiment by-products
+*.cache
+*.log
+wandb/
+
+# Pretrained and generated historical YOLOv5 weights are excluded.
+legacy/yolov5-master/yolov5s.pt
+legacy/yolov5-master/runs/
+
+# Machine-specific paths and portable runtime outputs
+/experiment_paths.local.json
+/outputs/
+/datasets/
+
+# Generated YOLOv8 outputs and automatically downloaded model weights
+/experiments/yolov8_comparison/runs/
+/experiments/yolov8_comparison/yolo*.pt
+/release_assets/
